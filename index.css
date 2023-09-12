@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #f7f7f7;
+  color: #454545;
+  padding: 15px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+.header__icon {
+  display: flex;
+  align-items: center;
+  margin: 16px;
+}
+
+h1 {
+  margin-left: 10px;
+}
+
+.main {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.menu {
+  width: 200px;
+  margin: 32px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  /* margin-bottom: 7px; */
+  color: #000000;
+}
+
+.menu img {
+  margin-right: 10px;
+}
+
+.menu li:hover {
+  background-color: rgb(240, 225, 224);
+  cursor: pointer;
+}
+
+.header__email {
+  margin-right: 20px;
+}
+
+.details__me {
+  margin-left: 0px;
+}
+
+.mail {
+  padding-left: 20px;
+  margin-top: 24px;
+  width: 100%;
+}
+
+.mail ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.mail li {
+  padding: 12px;
+  margin-right: 36px;
+  color: #000000;
+  border-bottom: 1px solid rgb(214, 214, 214);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mail li:hover {
+  cursor: pointer;
+  background-color: rgb(234, 234, 234);
+}
+.mail img {
+  margin-right: 20px;
+}
+
+.name {
+  display: flex;
+  min-width: 200px;
+  align-items: center;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+}
+
+.date span {
+  display: flex;
+  flex-direction: row;
+  width: 60px;
+}
+
+.mail__body span {
+  color: gray;
+}
+
+@media (max-width: 800px) and (min-width: 550px) {
+  .mail__details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mail__subject {
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: 800px) {
+  .mail__details {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .mail__subject span {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .mail__subject {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .mail__body span {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  span.icon {
+    display: inline-block;
+  }
+  span.text {
+    display: none;
+  }
+  /* .mail__subject {
+    margin-left: 40px;
+  } */
+}
+
+@media (max-width: 550px) {
+  .mail__details {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu {
+    width: 60px;
+  }
+  .mail__subject {
+    margin-left: 40px;
+  }
+}
+
+.mail__details {
+  display: flex;
+}

@@ -1,28 +1,132 @@
-.list {
-    margin: 10px;
-    background-color: #ef9eaf;
-    width: 420px;
-    padding: 10px;
-    list-style-position: inside;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #201f24;
+	font-family: "Inter", sans-serif;
 }
 
-ol li {
-    background: #c56375;
-    padding: 10px;
-
+#hero {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 965px;
 }
 
-li {
-    margin: 20px;
+.fixed-header {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	position: fixed;
+	background-color: #201f24;
+}
+.fixed-header {
+	top: 0;
 }
 
-span {
-    background-color: #9d3649;
-    padding: 10px;
+.fixed-header > h2 {
+	color: #fff;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin-left: 50px;
 }
 
-ol {
-    padding: 0px 0px 0px 0px;
+nav > a {
+	color: #fff;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	padding-right: 30px;
+	text-decoration: none;
+}
+
+.fixed-header > nav {
+	position: absolute;
+	right: 0px;
+	color: #fff;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin-right: 50px;
+}
+
+.container {
+	height: auto;
+	width: 80%;
+}
+
+.main {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.hero__title {
+	display: flex;
+	flex-direction: column;
+}
+
+.hero__title > h3 {
+	color: #a9c65b;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin: 0;
+}
+
+.hero__title > h2 {
+	color: #fff;
+	font-size: 64px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin: 0;
+}
+
+#specs {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #323134;
+	width: 100%;
+	height: 965px;
+}
+
+.grid {
+	display: grid;
+	background-color: #201f24;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+}
+
+.container > h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 426px;
+	height: 74px;
+	color: #a6c25a;
+	font-size: 64px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin: 0;
+	background-color: #201f24;
+    width: 100%;
+}
+
+.grid__item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	height: 340px;
+	border: 0.5px solid rgb(83, 83, 83);
+	margin: 30px;
 }

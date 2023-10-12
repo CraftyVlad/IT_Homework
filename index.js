@@ -7,10 +7,10 @@ SCROLL_XBOX.addEventListener("click", (e) => {
 	scrollTo(0, 1);
 });
 SCROLL_SPECS.addEventListener("click", (e) => {
-	scrollTo(0, 800);
+	scrollTo(0, 1050);
 });
 SCROLL_GAMES.addEventListener("click", (e) => {
-	scrollTo(0, 2100);
+	scrollTo(0, 2350);
 });
 SCROLL_SUPPORT.addEventListener("click", (e) => {
 	scrollTo(0, 9999);

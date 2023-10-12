@@ -8,14 +8,13 @@ body {
 	padding: 0;
 	background-color: #201f24;
 	font-family: "Inter", sans-serif;
-	
 }
 
 #hero {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	height: 965px;
+	height: 1210px;
 }
 
 #specs {

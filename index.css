@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 * {
 	scroll-behavior: smooth;
 }
@@ -34,13 +35,13 @@ body {
 	height: 1400px;
 }
 
-#footer {
+footer {
 	display: flex;
 	background-color: #e7e7e7;
 	height: 325px;
 }
 
-.fixed-header {
+header {
 	display: flex;
 	align-items: center;
 	top: 0;
@@ -50,7 +51,7 @@ body {
 	z-index: 9999;
 }
 
-.fixed-header > h2 {
+header > h2 {
 	color: #fff;
 	font-size: 40px;
 	font-style: normal;
@@ -71,7 +72,7 @@ nav > a {
 	cursor: pointer;
 }
 
-.fixed-header > nav {
+header > nav {
 	position: absolute;
 	right: 0px;
 	color: #fff;
@@ -82,12 +83,12 @@ nav > a {
 	margin-right: 50px;
 }
 
-.container {
+.hero__container {
 	height: auto;
 	width: 80%;
 }
 
-.main {
+.hero__page {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -116,14 +117,19 @@ nav > a {
 	margin: 0;
 }
 
-.grid {
+.hero__page_img {
+	width: 1100px;
+	height: 880px;
+}
+
+.specs__grid {
 	display: grid;
 	background-color: #201f24;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(2, 1fr);
 }
 
-.container > h2 {
+.specs__container > h2 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -140,7 +146,7 @@ nav > a {
 	width: 100%;
 }
 
-.grid__item {
+.specs__grid_item {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -151,7 +157,7 @@ nav > a {
 	margin: 0 30px 30px 30px;
 }
 
-.grid__item > h2 {
+.specs__grid_item > h2 {
 	color: #fff;
 	font-family: Inter;
 	font-size: 58px;
@@ -161,7 +167,7 @@ nav > a {
 	margin: 20px 0 20px 0;
 }
 
-.grid__item > p {
+.specs__grid_item > p {
 	color: #fff;
 	font-family: Inter;
 	font-size: 24px;
@@ -171,19 +177,19 @@ nav > a {
 	margin: 24px 10px 24px 10px;
 }
 
-.image-box {
+.games__image_box {
 	display: flex;
 	overflow: hidden;
 	margin: auto;
-	height: 941px;
-	width: 1860px;
+	height: 606px;
+	width: 1200px;
 	border-right: 0.5px solid #fff;
 	border-left: 0.5px solid #fff;
 }
 
-.image-box > img {
-	max-width: 100%;
-	max-height: 100%;
+.games__image_box > img {
+	max-width: 240px;
+	max-height: 611px;
 	transition: all 0.2s;
 	display: block;
 	width: auto;
@@ -193,7 +199,7 @@ nav > a {
 	border-left: 0.5px solid #fff;
 }
 
-.image-box > img:hover {
+.games__image_box > img:hover {
 	transform: scale(1.1);
 	cursor: pointer;
 }
@@ -231,13 +237,13 @@ nav > a {
 	line-height: normal;
 }
 
-.footer__main {
+.footer__main_column {
 	display: flex;
 	flex-direction: column;
 	margin-left: 136px;
 }
 
-.footer__main > h3 {
+.footer__main_column > h3 {
 	color: #515151;
 	text-align: left;
 	font-family: Inter;
@@ -248,7 +254,7 @@ nav > a {
 	margin: 40px 0 10px 0;
 }
 
-.footer__main > a {
+.footer__main_column > a {
 	color: #515151;
 	text-decoration: none;
 	text-align: left;
@@ -277,4 +283,64 @@ nav > a {
 	font-weight: 400;
 	line-height: normal;
 	margin-right: 75px;
+}
+
+@media screen and (max-width: 1400px) {
+	.hero__title {
+		display: flex;
+		margin: auto;
+	}
+	.hero__page_img {
+		display: none;
+	}
+
+	#specs {
+		height: 1700px;
+	}
+	.specs__container {
+		width: 350;
+	}
+	.specs__grid {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	#games {
+		height: 1400px;
+	}
+	.games__image_box {
+		display: grid;
+		width: 727px;
+		height: 606px;
+		grid-template-columns: repeat(3, 1fr);
+		grid-row: 1;
+	}
+	.games__image_box > img {
+		max-width: 240px;
+		max-height: 611px;
+	}
+
+	.footer__main_column {
+		display: flex;
+		flex-direction: column;
+		margin-left: 50px;
+	}
+	.footer__more {
+		margin-right: 20px;
+	}
+	.footer__more > a {
+		margin-right: 15px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	header > nav > a {
+		margin: 0;
+		padding: 5px;
+	}
+	.footer__main_column {
+		display: flex;
+		flex-direction: column;
+		margin-left: 20px;
+	}
 }

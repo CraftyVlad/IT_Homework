@@ -1,7 +1,7 @@
-const SCROLL_SPECS = document.querySelector(".SpecsScroll");
-const SCROLL_GAMES = document.querySelector(".GamesScroll");
-const SCROLL_XBOX = document.querySelector(".XboxScroll");
-const SCROLL_SUPPORT = document.querySelector(".SupportScroll");
+const SCROLL_XBOX = document.querySelector(".header__Xbox_scroll");
+const SCROLL_SPECS = document.querySelector(".header__Specs_scroll");
+const SCROLL_GAMES = document.querySelector(".header__Games_scroll");
+const SCROLL_SUPPORT = document.querySelector(".header__Support_scroll");
 
 SCROLL_XBOX.addEventListener("click", (e) => {
 	scrollTo(0, 1);

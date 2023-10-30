@@ -48,10 +48,10 @@ header {
 	width: 100%;
 	position: fixed;
 	background-color: rgb(32, 31, 36, 0.8);
-	z-index: 9999;
+	z-index: 9000;
 }
 
-header > h2 {
+.header__Xbox_scroll {
 	color: #fff;
 	font-size: 40px;
 	font-style: normal;
@@ -61,7 +61,9 @@ header > h2 {
 	cursor: pointer;
 }
 
-nav > .header__Specs_scroll, .header__Games_scroll, .header__Support_scroll {
+nav > .header__Specs_scroll,
+.header__Games_scroll,
+.header__Support_scroll {
 	color: #fff;
 	font-size: 32px;
 	font-style: normal;
@@ -118,8 +120,8 @@ header > nav {
 }
 
 .hero__page_img {
-	width: 1100px;
-	height: 880px;
+	width: 1000px;
+	height: 780px;
 }
 
 .specs__grid {
@@ -181,15 +183,13 @@ header > nav {
 	display: flex;
 	overflow: hidden;
 	margin: auto;
-	height: 606px;
-	width: 1200px;
-	border-right: 0.5px solid #fff;
-	border-left: 0.5px solid #fff;
+	height: 53vh;
+	width: 1280px;
 }
 
-.games__image_box > img {
-	max-width: 240px;
-	max-height: 611px;
+.games__img {
+	width: auto;
+	height: auto;
 	transition: all 0.2s;
 	display: block;
 	width: auto;
@@ -278,65 +278,65 @@ header > nav {
 	text-decoration: none;
 	text-align: left;
 	font-family: Inter;
-	font-size: 24px;
+	font-size: 18px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
-	margin-right: 75px;
+	margin-right: 50px;
 }
 
-.burger{
-    height: 36px;
-    width: 36px;
-    position: relative;
-    display: none;
+.burger {
+	height: 36px;
+	width: 36px;
+	position: relative;
+	display: none;
 }
 
-.burger :first-child{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 6px;
-    background-color: #ffffff;
-    transition: 0.5s;
+.burger :first-child {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 6px;
+	background-color: #ffffff;
+	transition: 0.3s;
 }
 
-.burger :nth-child(2){
-    position: absolute;
-    bottom: calc(36px/2 - 6px/2);
-    left: 0;
-    width: 100%;
-    height: 6px;
-    background-color: rgb(255, 255, 255);
-    transition: 0.5s;
+.burger :nth-child(2) {
+	position: absolute;
+	bottom: calc(36px / 2 - 6px / 2);
+	left: 0;
+	width: 100%;
+	height: 6px;
+	background-color: rgb(255, 255, 255);
+	transition: 0.3s;
 }
 
-.burger :last-child{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 6px;
-    background-color: rgb(255, 255, 255);
-    transition: 0.5s;
+.burger :last-child {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 6px;
+	background-color: rgb(255, 255, 255);
+	transition: 0.3s;
 }
 
-.burger.active :first-child{
-    transform: rotate(45deg);
-    top: calc(50% - 3px);
-    transition: 0.5s;
+.burger.active :first-child {
+	transform: rotate(45deg);
+	top: calc(50% - 3px);
+	transition: 0.3s;
 }
 
-.burger.active :nth-child(2){
-    display: none;
-    transition: 0.5s;
+.burger.active :nth-child(2) {
+	display: none;
+	transition: 0.3s;
 }
 
-.burger.active :last-child{
-    transform: rotate(-45deg);
-    bottom: calc(50% - 3px);
-    transition: 0.5s;
+.burger.active :last-child {
+	transform: rotate(-45deg);
+	bottom: calc(50% - 3px);
+	transition: 0.3s;
 }
 
 @media screen and (max-width: 1400px) {
@@ -352,7 +352,7 @@ header > nav {
 		height: 1700px;
 	}
 	.specs__container {
-		width: 350;
+		width: 95vw;
 	}
 	.specs__grid {
 		display: grid;
@@ -386,10 +386,10 @@ header > nav {
 		margin-right: 15px;
 	}
 
-	.burger{
-        display: block;
-        cursor: pointer;
-    }
+	.burger {
+		display: block;
+		cursor: pointer;
+	}
 	.header__Specs_scroll {
 		display: none;
 	}
@@ -406,6 +406,26 @@ header > nav {
 		margin: 0;
 		padding: 10px;
 	}
+
+	.games__header > h1 {
+		margin: 51px 0 48px 0;
+		width: 95vw;
+		height: 150px;
+	}
+
+	.games__header > h3 {
+		margin-top: 100px;
+		width: 90vw;
+		height: 92px;
+	}
+	.games__image_box {
+		display: grid;
+		width: 484px;
+		height: 606px;
+		grid-template-columns: repeat(2, 1fr);
+		grid-row: 1;
+	}
+
 	.footer__main_column {
 		display: flex;
 		flex-direction: column;

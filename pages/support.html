@@ -5,18 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xbox Support</title>
+    <link rel="stylesheet" href="../styles/support.css">
 </head>
 
 <body>
-    <h3>Contact Form</h3>
-
+    <h1>Contact us</h1>
+    <h3>Let us know about your problem.</h3>
     <div class="container">
-        <form style="display: flex; flex-direction: column;">
-            <label>First Name</label>
-            <input type="email" id="email" placeholder="Your email">
+        <form>
+            <label>What can we help you with?</label>
+            <select name="type" id="type">
+                <option value="" disabled selected>Select what we can help you with</option>
+                <option value="">Console issue</option>
+                <option value="">Website isn't working</option>
+                <option value="">Return an item</option>
+            </select>
 
-            <label>Last Name</label>
-            <input type="password" id="password" placeholder="Your password">
+            <label>Name</label>
+            <input type="text" id="name">
+
+            <label>Email</label>
+            <input type="email" id="email">
 
             <label>Country</label>
             <select id="country" name="country">
@@ -270,11 +279,10 @@
             </select>
 
             <label>Subject</label>
-            <textarea id="subject" name="subject" placeholder="Click here to start typing" style="height:200px"></textarea>
+            <textarea id="subject" name="subject"></textarea>
 
-            <input type="submit" value="Submit">
+            <input class="submit" type="submit" value="Send">
         </form>
-        <h1 style="display: flex; justify-content: center;">Thank you for contacting us!</h1>
     </div>
 </body>
 

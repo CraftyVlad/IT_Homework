@@ -48,7 +48,7 @@ header {
 	width: 100%;
 	position: fixed;
 	background-color: rgb(32, 31, 36, 0.8);
-	z-index: 9000;
+	z-index: 9999;
 }
 
 .header__Xbox_scroll {
@@ -285,6 +285,10 @@ header > nav {
 	margin-right: 50px;
 }
 
+.mobile_menu ul {
+	display: none;
+}
+
 .burger {
 	height: 36px;
 	width: 36px;
@@ -390,12 +394,38 @@ header > nav {
 		display: block;
 		cursor: pointer;
 	}
-	.header__Specs_scroll {
-		display: none;
+	.mobile_menu div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		position: fixed;
+		z-index: 9998;
+		right: 0;
+		width: 40%;
+		background-color: #201f24;
+		height: 100vh;
+		transform: translateX(100vw);
+		transition: 0.5s;
+		border-left: 1px solid rgb(105, 105, 105);
 	}
-	.header__Games_scroll {
-		display: none;
+	.mobile_menu div a {
+		color: #fff;
+		font-size: 5vw;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		text-decoration: none;
+		cursor: pointer;
+		margin-bottom: 20px;
 	}
+	.mobile_menu.active div {
+		transform: translate(0);
+		transition: 0.5s;
+	}
+
+	.header__Specs_scroll,
+	.header__Games_scroll,
 	.header__Support_scroll {
 		display: none;
 	}

@@ -4,7 +4,6 @@ import React from "react";
 const items = () => {
 	return (
 		<>
-			<Link href="/">home</Link>
 			<p>товари</p>
 		</>
 	);

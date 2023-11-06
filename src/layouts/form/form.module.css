@@ -1,0 +1,75 @@
+.form {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 88vw;
+	margin: auto;
+}
+
+.form__info {
+	display: flex;
+	flex-direction: column;
+}
+
+.submit {
+	display: flex;
+	flex-direction: column;
+	margin: auto 0px;
+}
+
+.form__title {
+	color: black;
+	font-family: Inter;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: normal;
+}
+
+.form__info > input {
+	margin-top: 30px;
+	width: 855px;
+	color: rgba(165, 165, 165, 0.8);
+	font-family: Inter;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	border: none;
+	border-bottom: 1px solid black;
+	padding-bottom: 7px;
+	outline: none;
+}
+
+.submit__h {
+	display: flex;
+	align-items: center;
+	width: 226px;
+	color: black;
+	text-align: center;
+	font-family: Inter;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.submit > input {
+	display: flex;
+    margin: 0px auto;
+    align-items: center;
+    justify-content: center;
+	color: black;
+    height: 40px;
+    width: 120px;
+	font-family: Inter;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	padding: 10px 30px;
+	border: none;
+	border-radius: 15px;
+	background-color: #ffba08;
+    cursor: pointer;
+}

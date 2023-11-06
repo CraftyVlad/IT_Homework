@@ -4,7 +4,6 @@ import React from 'react'
 const contacts = () => {
   return (
 		<>
-			<Link href="/">home</Link>
 			<p>контакти</p>
 		</>
   );

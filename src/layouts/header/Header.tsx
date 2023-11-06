@@ -5,10 +5,10 @@ import Link from "next/link";
 const Header = () => {
 	return (
 		<header className={styles.header}>
-			<header className={styles.logo}>Logo</header>
+			<a href="/" className={styles.logo}>Logo</a>
 			<input type="search" name="search" className={styles.search__bar} />
 			<select name="items" className={styles.items__select}>
-				<option value="Товари">Товари</option>
+				<option value="./items">Товари</option>
 			</select>
 			<Link href="./about" className={styles.about__link}>
 				Про нас

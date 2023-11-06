@@ -1,0 +1,68 @@
+.footer {
+	margin-top: 50px;
+	width: 100%;
+	height: 313px;
+	background-color: black;
+}
+
+.container {
+	display: flex;
+	padding-top: 60px;
+	justify-content: center;
+	width: 90vw;
+	height: 190px;
+}
+
+.social {
+	display: flex;
+	flex-direction: column;
+}
+
+.social > img {
+	width: 25.797px;
+	height: 25.797px;
+	margin: 20px 116px 20px 0px;
+}
+
+.container > h1 {
+	color: white;
+	font-family: Inter;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: normal;
+	margin: 60px 116px 0px 0px;
+}
+
+.column__link {
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	color: white;
+	font-family: Inter;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin: 0px 160px 20px 0px;
+}
+
+.contacts > div {
+	display: flex;
+	flex-direction: row;
+}
+
+.contacts > div > img {
+	width: 34px;
+	height: 34px;
+}
+
+.contacts > div > p {
+	color: white;
+	font-family: Inter;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin: 0px 25px 45px;
+}

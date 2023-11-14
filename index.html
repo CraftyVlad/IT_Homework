@@ -1,30 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JS 29.09.2023</title>
+
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <div class="list">
-        <ol>
-            <li>
-                <span>Apple</span>
-            </li>
-            <li>
-                <span>Orange</span>
-            </li>
-            <li>
-                <span>Pineapple</span>
-            </li>
-            <li>
-                <span>Pear</span>
-            </li>
-            <li>
-                <span>Cherry</span>
-            </li>
-        </ol>
+    <h3>1. Enter your name. NO DIGITS!</h3>
+    <input type="text" id="usernameInput" placeholder="Enter your name" oninput="checkInput()">
+
+    <h3>2. Modal window</h3>
+    <button onclick="openModal()">Open modal</button>
+    <div id="myModal" class="modal">
+        <p>Hello from Modal Window!</p>
+        <button onclick="closeModal()">Close</button>
     </div>
+
+    <h3>4. Trafic light</h3>
+    <div class="traffic-light">
+        <div class="light red"></div>
+        <div class="light yellow"></div>
+        <div class="light green"></div>
+    </div>
+    <button onclick="changeLight()">Змінити колір</button>
+
+    <h3>6. Button Tooltip</h3>
+    <div class="tooltip">Button 1
+        <span class="tooltiptext">Tooltip 1</span>
+    </div>
+
+    <div class="tooltip">Button 2
+        <span class="tooltiptext">Tooltip 2</span>
+    </div>
+
+    <div class="tooltip">Button 3
+        <span class="tooltiptext">Tooltip 3</span>
+    </div>
+
+    <h3>7. Directory</h3>
+    <ul>
+        <li>This PC
+            <li>Local Disk (C:)
+                <ul>
+                    <li>Program Files</li>
+                    <li>Users</li>
+                    <li>Windows</li>
+                </ul>
+            </li>
+            <li>Local Disk (D:)
+                <ul>
+                    <li>New Folder 1</li>
+                    <li>New Folder 2</li>
+                    <li>New Folder 3</li>
+                </ul>
+            </li>
+            <li>Local Disk (E:)
+            </li>
+        </li>
+    </ul>
+
+
+    <h3>8. Resizable window</h3>
+    <div class="resizable-block" onmousedown="startResize(event)">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis tincidunt ex, at tincidunt neque
+            hendrerit ac. Sed in arcu vitae justo volutpat lobortis. Sed nec eleifend ligula, eget ullamcorper sem.</p>
+    </div>
+
+    <script src="index.js"></script>
 </body>
+
 </html>

@@ -7,24 +7,37 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="list">
-        <ol>
-            <li>
-                <span>Apple</span>
-            </li>
-            <li>
-                <span>Orange</span>
-            </li>
-            <li>
-                <span>Pineapple</span>
-            </li>
-            <li>
-                <span>Pear</span>
-            </li>
-            <li>
-                <span>Cherry</span>
-            </li>
-        </ol>
+    <h1>Create new color</h1>
+    
+    <form id="post">
+        <div>
+            <label for="colorName">Color:</label>
+            <span id="nameError" class="error"></span>
+        </div>
+        <input type="text" id="colorName" name="colorName"  required>
+        
+    
+        <label for="colorType">Type:</label>
+        <select id="colorType" name="colorType">
+            <option value="RGB">RGB</option>
+            <option value="RGBA">RGBA</option>
+            <option value="HEX">HEX</option>
+        </select>
+    
+        <div>
+            <label for="colorCode">Code:</label>
+            <span id="codeError" class="error"></span>
+        </div>
+        <input type="text" id="colorCode" name="colorCode" required>
+        
+    
+        <button type="submit" onclick="putCookie(document.getElementsByTagName('form'));">Save</button>
+    </form>
+    
+    <div id="colorPalette">
+        
     </div>
+
+    <script src="index.js"></script>
 </body>
 </html>

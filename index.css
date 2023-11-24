@@ -14,45 +14,61 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	padding: 20px;
-}
-
-.traffic-light {
-	display: flex;
-	flex-direction: row;
 	align-items: center;
 }
-.light {
+
+.trafficLight,
+.container {
+	display: flex;
+	flex-direction: row;
+}
+.red {
+	background-color: red;
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
 	margin: 10px;
 }
-.red {
-	background-color: red;
-}
 .yellow {
 	background-color: yellow;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin: 10px;
 }
 .green {
 	background-color: green;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin: 10px;
 }
 
-.tooltip {
-	display: flex;
-	flex-direction: row;
+.tooltip.top, .tooltip.bottom {
+	position: relative;
+	display: inline-block;
+	margin: 10px;
+	align-items: center;
 }
-.tooltip .tooltiptext {
+.tooltiptext {
 	visibility: hidden;
-	width: 0px;
-	background-color: #8a51aa;
-	color: white;
+	width: 65px;
+	padding: 10px;
+	background-color: #8a52a8;
+	color: #fff;
 	text-align: center;
-	padding: 5px 0;
+	border-radius: 6px;
 	position: absolute;
 	z-index: 1;
 }
 .tooltip:hover .tooltiptext {
 	visibility: visible;
+}
+.tooltip.top .tooltiptext {
+	bottom: 50px;
+}
+.tooltip.bottom .tooltiptext {
+	top: 50px;
 }
 
 ul ul {

@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <h3>1. Enter your name. NO DIGITS!</h3>
+    <h3>1. Enter your name (name can't contain digits):</h3>
     <input type="text" id="usernameInput" placeholder="Enter your name" oninput="checkInput()">
 
     <h3>2. Modal window</h3>
@@ -20,46 +20,61 @@
         <button onclick="closeModal()">Close</button>
     </div>
 
-    <h3>4. Trafic light</h3>
-    <div class="traffic-light">
-        <div class="light red"></div>
-        <div class="light yellow"></div>
-        <div class="light green"></div>
+    <h3>3. Football field</h3>
+    <p>Не знаю як то зробити</p>
+
+    <h3>4. Traffic light (не знаю)</h3>
+    <div class="trafficLight">
+        <div class="container">
+            <div id="light" class="red"></div>
+            <div class="yellow"></div>
+            <div class="green"></div>
+        </div>
+        <button>Перемкнути колір</button>
     </div>
-    <button onclick="changeLight()">Змінити колір</button>
+
+    <h3>5. Books</h3>
+    <ol>
+        <li onclick="changeColor(this)">"JavaScript for Kids: A Playful Introduction to Programming" by Nick Morgan</li>
+        <li onclick="changeColor(this)">"Eloquent JavaScript: A Modern Introduction to Programming" by Marijn Haverbeke</li>
+        <li onclick="changeColor(this)">"JavaScript: The Good Parts" by Douglas Crockford</li>
+        <li onclick="changeColor(this)">"Programming JavaScript Applications: Robust Web Architecture with Node. HTML5, and Moderns JS Libraries" by Eric Elliot</li>
+        <li onclick="changeColor(this)">"Effective javascript: 68 Specific Ways tp Harness the Power of JavaScript" by David Herman</li>
+        <li onclick="changeColor(this)">"JavaScript: The Definitive Guide" by David Flanagan</li>
+        <li onclick="changeColor(this)">"You Don't Know JS" by Kyle Simpson</li>
+    </ol>
 
     <h3>6. Button Tooltip</h3>
-    <div class="tooltip">Button 1
-        <span class="tooltiptext">Tooltip 1</span>
+    <div class="tooltip top">
+        <span class="tooltiptext">Tool tip 1</span>
+        <button class="button" style="padding: 10px; font-size: 20px;">Button 1</button>
+        
     </div>
-
-    <div class="tooltip">Button 2
-        <span class="tooltiptext">Tooltip 2</span>
-    </div>
-
-    <div class="tooltip">Button 3
-        <span class="tooltiptext">Tooltip 3</span>
+    <div class="tooltip bottom">
+        <span class="tooltiptext">Tool tip 2</span>
+        <button class="button" style="padding: 10px; font-size: 20px;">Button 2</button>
+        
     </div>
 
     <h3>7. Directory</h3>
     <ul>
         <li>This PC
-            <li>Local Disk (C:)
-                <ul>
-                    <li>Program Files</li>
-                    <li>Users</li>
-                    <li>Windows</li>
-                </ul>
-            </li>
-            <li>Local Disk (D:)
-                <ul>
-                    <li>New Folder 1</li>
-                    <li>New Folder 2</li>
-                    <li>New Folder 3</li>
-                </ul>
-            </li>
-            <li>Local Disk (E:)
-            </li>
+        <li>Local Disk (C:)
+            <ul>
+                <li>Program Files</li>
+                <li>Users</li>
+                <li>Windows</li>
+            </ul>
+        </li>
+        <li>Local Disk (D:)
+            <ul>
+                <li>New Folder 1</li>
+                <li>New Folder 2</li>
+                <li>New Folder 3</li>
+            </ul>
+        </li>
+        <li>Local Disk (E:)
+        </li>
         </li>
     </ul>
 

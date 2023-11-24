@@ -13,29 +13,32 @@ function checkInput() {
 
 // 2.
 function openModal() {
-	document.getElementById("myModal").style.display = "block";
+	document.getElementById("myModal").style.display = "flex";
+	document.getElementById("myModal").style.flexDirection = "column";
+	document.getElementById("myModal").style.justifyContent = "center";
+	document.getElementById("BGC").style.backgroundColor = "black";
 }
 
 function closeModal() {
 	document.getElementById("myModal").style.display = "none";
 }
 
-// 3. не знаю як робити
+// 3. Не знаю, як робити.
 
-// 4. не знаю як правильно робити
-let currentLight = 0;
-const lights = document.querySelectorAll(".light");
+// 4. Не знаю, як правильно робити.
 
-function changeLight() {
-	lights[currentLight].style.backgroundColor = "";
-	currentLight = (currentLight + 1) % lights.length;
-	lights[currentLight].style.backgroundColor =
-		lights[currentLight].classList[1];
+// 5.
+function changeColor(element) {
+	let books = document.getElementsByTagName("li");
+	for (let i = 0; i < books.length; i++) {
+		books[i].style.backgroundColor = "#fbf2e9";
+	}
+	element.style.backgroundColor = "#ffa984";
 }
 
-// 5. не знаю як робити
+// Я не знаю як зробити, щоб колір повертався, коли знов натискаєш на кнопку.
 
-// 6. не знаю як робити в JS
+// 6. Не знаю, як робити в JS.
 
 // 7.
 document.querySelectorAll("li").forEach((item) => {
